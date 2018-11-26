@@ -1,0 +1,220 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#banniere_description
+{
+    
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+#section_inscription
+{
+  
+  justify-content: center;
+  padding: 12px;
+  background: #f0f2f2; 
+  margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: solid;
+  
+  
+}
+
+
+/* Corps */
+
+
+input {
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    border-radius: 12px 12px 12px 12px;
+    display: inline-block;
+    margin-right: 17px;
+    margin-left: -15px;
+}
+span{
+display:flex;  
+}
+label{
+  display:flex;
+  font-family: sans-serif;
+  
+}
+#insertext{
+    {
+    height: 100px;
+    margin-left: -427px;
+    width: 244px;
+}
+}
+select               {
+
+    width: 214px;
+    border-radius: 12px 12px 12px 12px;
+    border: none;
+    font-size: 15px;
+    padding-top: 15px;
+    padding: 10px 10px 10px 5px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    margin-left: -14px;
+
+
+}
+label {
+       width: 152px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+.p{
+
+
+}
+
+
+

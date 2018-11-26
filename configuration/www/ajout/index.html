@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style_diapo.css" />
+        <script type= "text/javascript" src="script.js"></script>
+        
+        
+        <title>Ajouter une planche</title>
+    </head>
+    
+    <body id="body">
+    	<div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img src="images/download.jpg" alt="Logo" />
+                        <h1>Learn english</h1>    
+                    </div>
+                    <h2>Apprendre l'anglais a la Sherlock</h2>
+                </div>
+            
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                    le meilleur des sites pour apprendre l'anglais ...
+                </div>
+            </div>
+        
+
+
+        <form   action = '/ajout' method='post'>
+
+        	<div id="afterheader">
+        					
+
+							<label class="form_col"> Nom de la planche</label>
+							
+							 <input id="input" name="nomplanche"  placeholder='inserez le nom de la planche'><br>
+
+							 <label class="form_col">Choisir une image</label>
+							<input id="input" class="file" type='file' id="imgSel" multiple accept=".jpg, .jpeg, .png"/><br>
+
+							<label class="form_col">Inserer le cours</label><br>
+							<div id="textarea"></div>
+
+							<textarea id="insertexte" name="textedesc" placeholder='inserez votre texte'></textarea>
+			</div>
+
+
+
+					<h3 id="h3">
+					Questions</h3>
+
+					
+				<div id="monchampsdiv">
+					<div id="monchamps">
+						<label id="form_col1">Inserer une question</label><br>
+					    <textarea id="insertexte" name="texteq[]" placeholder='inserez votre question'></textarea><br>
+						 
+																			<label id="form_col1">Choisir type de reponses</label><br>
+																			<div>
+																				<select name="niveau" id="niveau">
+										                                        
+										                                        <option value="1">Checkbox</option>
+										                                        <option value="2">Radiobutton</option>
+										                                       
+										                                    	</select><br>
+																			</div>
+									
+																			<div id="champs" >
+																				<label id="form_col1">Ecrire des reponses </label><br>
+																			    <input id="input" type="textrep" name="textrep[]" /><br>
+																			</div>
+
+							<button id="button" type="button" onclick="addField(this.form)" >Ajouter une reponse </button>
+								   
+
+																			<div>
+																				<label id="form_col1">Ecrire la bonne reponse </label><br>
+																				<input id="input" placeholder='inserez votre texte'><br>
+
+																			</div>
+						
+					</div>
+						
+					
+				</div >
+
+					<input id="submit" type="submit">
+
+</form>
+            
+            <footer>
+                <div id="contact">
+                    <h1>Nous contacter</h1>
+                    <div id="listes_contact">
+                        
+                        <ul>
+                            <li><a href="#">exemple@xyz.fr</a></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
